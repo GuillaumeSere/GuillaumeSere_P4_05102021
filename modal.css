@@ -45,7 +45,7 @@ img {
   display: block;
   color: #000000;
   text-align: center;
-  padding: 12px 12px;
+  padding: 15px 15px;
   margin: 5px;
   text-decoration: none;
   font-size: 20px;
@@ -68,7 +68,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -76,7 +76,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -111,8 +111,6 @@ main {
   margin: 1px 20px 15px;
   border-radius: 2rem;
   text-align: justify;
-
-
 }
 
 .modal-btn {
@@ -193,12 +191,15 @@ label {
   font-size: 17px;
   font-weight: normal;
   display: inline-block;
-  margin-bottom: 11px;
+  margin-top: 20px;
 }
 input {
   padding: 8px;
   border: 0.8px solid #ccc;
   outline: none;
+}
+input:focus{
+  border: 2px solid red;
 }
 .text-control {
   margin: 0;
@@ -479,6 +480,10 @@ footer {
   margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
+  .content {
+    width:90%;
+  }
+
   .hero-section {
     display: block;
     box-shadow: unset;
