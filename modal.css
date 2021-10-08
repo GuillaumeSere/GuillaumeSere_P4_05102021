@@ -224,7 +224,11 @@ input:focus{
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-
+.formData .error_msg{
+  color:red;
+  font-size: 18px;
+  text-align: center;
+}
 /* 
 input[data-error]::after {
     content: attr(data-error);

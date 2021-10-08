@@ -87,6 +87,7 @@ const form_inscription = {
         ) {
         this.error_msg.push(input.error_msg);
         form_inscription.elements[name].classList.add("erreur");
+       
       }
     }
   }
