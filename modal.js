@@ -23,14 +23,14 @@ const modal = {
         return;
       }
       // Evénement sur chaque modal
-      link.addEventListener("click", () => this.open(mid));
-      this.modal[mid].getElementsByClassName("close")[0].addEventListener("click", () => this.close(mid));
+      link.addEventListener("click", () => this.openModal(mid));
+      this.modal[mid].getElementsByClassName("close")[0].addEventListener("click", () => this.closeModal(mid));
     } )
   },
-  open(mid) {
+  openModal(mid) {
     this.modal[mid].style.display = "block";
   },
-  close(mid) {
+  closeModal(mid) {
     this.modal[mid].style.display = "none";
   }
 }
@@ -62,7 +62,7 @@ const form_inscription = {
     quantity: {
       require: true,
       error_msg: "Veuillez entrer un nombre"
-    }
+    },
 
   },
   onSubmit(event) {

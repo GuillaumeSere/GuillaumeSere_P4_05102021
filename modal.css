@@ -90,14 +90,15 @@ img {
   }
 }
 
-
-
  @media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
     margin-top: 1px;
+  }
+  .header-logo img{
+    width: 70%;
   }
 } 
 
@@ -495,9 +496,6 @@ footer {
   }
   .hero-content::after {
     content: unset;
-  }
-  .hero-content .btn-signup {
-    display: none;
   }
   .hero-headline {
     font-size: 4.5rem;
