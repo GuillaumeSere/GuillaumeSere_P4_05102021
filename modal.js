@@ -47,7 +47,7 @@ const form_inscription = {
             require: true,
         },
         email: {
-            require: false,
+            require: true,
             regex: /^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]­{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$/
         },
         birthdate: {
@@ -58,6 +58,9 @@ const form_inscription = {
             require: true,
         },
         location: {
+            require: true,
+        },
+        checkbox: {
             require: true,
         }
     },

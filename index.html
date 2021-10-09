@@ -87,6 +87,7 @@
                         <div class="form-group">
                             <label>E-mail</label><br>
                             <input class="text-control" type="email" id="email" name="email" /><br>
+                            <div class="errorMsg">Le champ email est requis</div>
                         </div>
 
                         <div class="form-group">
@@ -98,6 +99,7 @@
                         <div class="form-group">
                             <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                             <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+                            <div class="errorMsg">Un nombre est requis</div>
                         </div>
 
 
@@ -135,27 +137,28 @@
                                 Boston
                             </label>
 
-                            <input class="checkbox-input" type="radio" id="location6" name="location"
-                                value="Portland" />
+                            <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
                             <label class="checkbox-label" for="location6">
                                 <span class="checkbox-icon"></span>
                                 Portland
                             </label>
-                            <div class="errorMsg">Le champ location est requis</div>
+                            <div class="errorMsg">Une ville est requis</div>
                         </div>
 
                         <div class="form-group">
-                            <input class="checkbox-input" type="checkbox" id="checkbox1" checked required />
+                            <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox" />
                             <label class="checkbox2-label" for="checkbox1">
                                 <span class="checkbox-icon"></span>
                                 J'ai lu et accepté les conditions d'utilisation.
                             </label><br>
-
-                            <input class="checkbox-input" type="checkbox" id="checkbox2" />
+                            <div class="errorMsg">Vous devez accepter les consitions d'utilisation</div>   
+                           
+                            <input class="checkbox-input" type="checkbox" id="checkbox2" name="checkbox" />
                             <label class="checkbox2-label" for="checkbox2">
                                 <span class="checkbox-icon"></span>
                                 Je souhaite être prévenu des prochains évènements.
                             </label><br>
+                          
                         </div>
 
                         <input class="btn-submit" type="submit" class="button" value="C'est parti" />
