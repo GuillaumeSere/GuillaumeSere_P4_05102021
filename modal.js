@@ -59,10 +59,8 @@ const form_inscription = {
         },
         location: {
             require: true,
-        },
-        checkbox: {
-            require: true,
         }
+    
     },
     onSubmit(event) {
         event.preventDefault();
