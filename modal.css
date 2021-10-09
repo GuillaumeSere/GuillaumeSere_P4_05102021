@@ -14,7 +14,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-image: url("background.png");
+  /*background-image: url("background.png");*/
   font-family: var(--font-default);
   font-size: 18px;
   max-width: 1300px;
@@ -28,6 +28,10 @@ p {
 
 img {
   padding-right: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .topnav {
@@ -108,6 +112,7 @@ main {
   color: black;
   border-radius: 2rem;
   text-align: justify;
+  padding: 0 2rem;
 }
 
 .modal-btn {
@@ -152,7 +157,7 @@ main {
   font-size: 16px;
 }
 
-.bground {
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -206,7 +211,7 @@ input:focus{
   font-size: 20px;
   height: 48px;
 }
-.formData[data-error]::after {
+.form-group[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
   color: #e54858;
@@ -218,16 +223,21 @@ input:focus{
   opacity: 0;
   transition: 0.3s;
 }
-.formData[data-error-visible="true"]::after {
+.form-group[data-error-visible="true"]::after {
   opacity: 1;
 }
-.formData[data-error-visible="true"] .text-control {
+.form-group[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-.formData .error_msg{
+.form-group .errorMsg{
   color:red;
-  font-size: 18px;
-  text-align: center;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 3px;
+  display: none;
+}
+.form-group.error .errorMsg{
+  display: block;
 }
 /* 
 input[data-error]::after {
