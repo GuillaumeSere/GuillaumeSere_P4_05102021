@@ -189,7 +189,8 @@ main {
 }
 .modal-body-conf{
     text-align: center;
-    padding: 140px;
+    font-size: 33px;
+    padding: 100px;
     height: 400px;
     width: 90%;
     color: red; 
