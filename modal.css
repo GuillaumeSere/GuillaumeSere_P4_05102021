@@ -187,6 +187,13 @@ main {
   padding: 15px 8%;
   margin: 15px auto;
 }
+.modal-body-conf{
+    text-align: center;
+    padding: 140px;
+    height: 400px;
+    width: 90%;
+    color: red; 
+}
 
 label {
   font-family: var(--font-default);
