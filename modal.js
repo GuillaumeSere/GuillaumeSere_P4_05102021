@@ -59,6 +59,9 @@ const form_inscription = {
         },
         location: {
             require: true,
+        },
+        checkbox: {
+            require: true,
         }
     
     },
