@@ -515,9 +515,6 @@ footer {
   .hero-content::after {
     content: unset;
   }
-  .hero-content .btn-signup {
-    display: none;
-  }
   .hero-headline {
     margin: 0;
     margin-left: 4rem;
@@ -538,10 +535,14 @@ footer {
     margin: 32px auto 10px;
     padding: 12px 35px;
   }
+  .btn-signup {
+    display: none;
+  }
   .copyrights {
     margin-top: 50px;
     text-align: center;
   }
+ 
 }
 
 @media screen and (max-width: 450px){
