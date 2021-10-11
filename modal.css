@@ -190,10 +190,10 @@ main {
 .modal-body-conf{
     text-align: center;
     font-size: 33px;
-    padding: 100px;
-    height: 400px;
+    padding: 65px;
+    height: 476px;
     width: 90%;
-    color: red; 
+    color: white; 
 }
 
 label {
@@ -346,7 +346,7 @@ input[data-error]::after {
 .btn-signup {
   background: #fe142f;
   display: block;
-  margin:0 auto;
+  margin:15px auto;
   border-radius: 7px;
   font-size: 1rem;
   padding: 12px 82px;
