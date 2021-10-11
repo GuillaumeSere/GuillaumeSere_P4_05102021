@@ -42,11 +42,11 @@ const form_inscription = {
     inputsConf: {
         first_name: {
             require: true,
-            regex: /^[a-z].{1,}$/
+            regex: /^[a-z][^0-9]+$/
         },
         last_name: {
             require: true,
-            regex: /^[a-z].{1,}$/
+            regex: /^[a-z][^0-9]+$/
         },
         email: {
             require: true,
