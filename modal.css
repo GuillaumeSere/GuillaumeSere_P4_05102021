@@ -266,12 +266,15 @@ input:focus{
 .form-group.error .errorMsg{
   display: block;
 }
-/* 
+.form-group.error .text-control{
+    border: 2px solid red;
+}
+ 
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
     color: red;
-} */
+} 
 .checkbox-label,
 .checkbox2-label {
   position: relative;
