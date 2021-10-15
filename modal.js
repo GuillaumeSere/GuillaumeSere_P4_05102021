@@ -1,11 +1,6 @@
 /* function */
-function editNav() {
-    var nav = document.getElementById("myTopnav");
-    if (nav.className === "topnav") {
-        nav.className += " responsive";
-    } else {
-        nav.className = "topnav";
-    }
+function topNavToggle() {
+   document.getElementById("myTopnav").classList.toggle("responsive");
 }
 
 const modal = {

@@ -220,7 +220,8 @@ label {
   font-size: 17px;
   font-weight: normal;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 input {
   padding: 8px;
@@ -238,23 +239,8 @@ input:focus{
   font-size: 20px;
   height: 48px;
 }
-.form-group[data-error]::after {
-  content: attr(data-error);
-  font-size: 0.4em;
-  color: #e54858;
-  display: block;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  text-align: right;
-  line-height: 0.3;
-  opacity: 0;
-  transition: 0.3s;
-}
-.form-group[data-error-visible="true"]::after {
-  opacity: 1;
-}
-.form-group[data-error-visible="true"] .text-control {
-  border: 2px solid #e54858;
+.form-group {
+  margin-bottom: 10px;
 }
 .form-group .errorMsg{
   color:red;
@@ -270,11 +256,6 @@ input:focus{
     border: 2px solid red;
 }
  
-input[data-error]::after {
-    content: attr(data-error);
-    font-size: 0.4em;
-    color: red;
-} 
 .checkbox-label,
 .checkbox2-label {
   position: relative;
@@ -287,7 +268,7 @@ input[data-error]::after {
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid #279e7a;
+  border: 1px solid #fff;
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -319,6 +300,9 @@ input[data-error]::after {
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
   opacity: 1;
 }
+.checkbox-input:checked + .checkbox-label .checkbox-icon {
+    border: 1px solid #279e7a;
+  }
 .checkbox-input:checked + .checkbox2-label .checkbox-icon {
   background: #279e7a;
 }
