@@ -59,15 +59,16 @@
         <div class="hidden" data-modal="modal_success_inscription"></div>
         <div class="modal" id="modal_success_inscription">
             <div class="content">
-                <span class="close"></span>
+                <span class="close closeModal"></span>
                 <div class="modal-body-conf">Votre inscription à bien été pris en compte</div>
+                <button class="btn-primary closeModal">close</button>
             </div>
         </div>
 
         <div class="modal" id="modal_inscription">
             <div class="content">
 
-                <span class="close"></span>
+                <span class="close closeModal"></span>
 
                 <div class="modal-body">
                     <form id="form_inscription" name="reserve" action="index.html" method="get">
@@ -144,13 +145,14 @@
                         </div>
 
                         <div class="form-group">
-                            <input class="checkbox-input" type="radio" id="checkbox1" name="checkbox" />
+                            <input class="checkbox-input" type="checkbox" id="checkbox1" name="cgu" />
                             <label class="checkbox2-label" for="checkbox1">
                                 <span class="checkbox-icon"></span>
                                 J'ai lu et accepté les conditions d'utilisation.
-                            </label><br>
+                            </label>
                             <div class="errorMsg">Vous devez accepter les conditions d'utilisation</div>
-                           
+                            </div>
+                         <div class="form-group"> 
                             <input class="checkbox-input" type="checkbox" id="checkbox2" name="checkbox" />
                             <label class="checkbox2-label" for="checkbox2">
                                 <span class="checkbox-icon"></span>

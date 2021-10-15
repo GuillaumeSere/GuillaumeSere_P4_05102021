@@ -24,7 +24,7 @@ const modal = {
             }
             // Evénement sur chaque modal
             link.addEventListener("click", () => this.open(mid));
-            this.modal[mid].getElementsByClassName("close")[0].addEventListener("click", () => this.close(mid));
+            Object.values(this.modal[mid].getElementsByClassName("closeModal")).forEach(e => e.addEventListener("click", () => this.close(mid)));
         })
     },
     open(mid) {
@@ -62,7 +62,7 @@ const form_inscription = {
         location: {
             require: true,
         },
-        checkbox: {
+        cgu: {
             require: true,
         }
     },
@@ -91,6 +91,7 @@ const form_inscription = {
             // Controle des champs soumit par rapport à la configuration des champs
             if (
                 (inputConf.require === true && form_inscription.elements[name].value.length === 0) ||
+                (inputConf.require === true && form_inscription.elements[name].type === "checkbox" && ! form_inscription.elements[name].checked) ||
                 (inputConf.require === true && inputConf.regex && inputConf.regex.exec(form_inscription.elements[name].value) === null)
             ) {
                 this.error = true;
