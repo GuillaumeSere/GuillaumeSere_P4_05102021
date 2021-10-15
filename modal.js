@@ -65,19 +65,19 @@ const form_inscription = {
         checkbox: {
             require: true,
         }
-    
     },
     onSubmit(event) {
         event.preventDefault();
         form_inscription.validateInputs();
         // Submit faill
-        if (form_inscription.error === true) {
-
+        if (form_inscription.error) {
+           
         }
         // Submit success
         else {
             modal.close("modal_inscription");
             modal.open("modal_success_inscription");
+            document.getElementById("form_inscription").reset();
         }
     },
     validateInputs() {
@@ -96,13 +96,18 @@ const form_inscription = {
                 this.error = true;
                 formGroup.classList.add("error");
             } else {
-                formGroup.classList.remove("error");
+                formGroup.classList.remove("error"); 
             }
         }
-    }
+    }  
 }
 
 document.getElementById("form_inscription").addEventListener("submit", form_inscription.onSubmit);
+
+
+
+
+
 
 
 
