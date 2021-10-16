@@ -509,7 +509,7 @@ footer {
 }
 @media screen and (max-width: 991px) {
   .content {
-    width:90%;
+    margin:25% auto;
   }
   .hero-section {
     display: block;
